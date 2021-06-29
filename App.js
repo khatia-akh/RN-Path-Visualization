@@ -6,7 +6,7 @@
  * @flow strict-local
  */
 
-import React from 'react';
+import React from "react";
 import {
   SafeAreaView,
   ScrollView,
@@ -15,14 +15,11 @@ import {
   Text,
   useColorScheme,
   View,
-} from 'react-native';
+} from "react-native";
+import Navigation from "./src/navigation/navigation";
 
 const App = () => {
-  return (
-    <SafeAreaView>
-      <Text>khhhhhh</Text>
-    </SafeAreaView>
-  );
+  return <Navigation />;
 };
 
 const styles = StyleSheet.create({
@@ -32,15 +29,15 @@ const styles = StyleSheet.create({
   },
   sectionTitle: {
     fontSize: 24,
-    fontWeight: '600',
+    fontWeight: "600",
   },
   sectionDescription: {
     marginTop: 8,
     fontSize: 18,
-    fontWeight: '400',
+    fontWeight: "400",
   },
   highlight: {
-    fontWeight: '700',
+    fontWeight: "700",
   },
 });
 
