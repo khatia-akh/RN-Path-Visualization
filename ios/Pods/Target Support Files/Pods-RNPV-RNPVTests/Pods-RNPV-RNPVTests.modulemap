@@ -1,0 +1,6 @@
+module Pods_RNPV_RNPVTests {
+  umbrella header "Pods-RNPV-RNPVTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
