@@ -3,6 +3,7 @@ import { View, Text } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import HomeScreen from "../screens/homeScreen";
+import MapViewScreen from "../screens/MapViewScreen";
 
 const Stack = createStackNavigator();
 
@@ -28,6 +29,7 @@ const Navigation = () => {
             },
           }}
         />
+        <Stack.Screen name="MapViewScreen" component={MapViewScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

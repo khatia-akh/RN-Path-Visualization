@@ -3,11 +3,16 @@ import { StyleSheet, View, Text } from "react-native";
 
 import PathItems from "../components/pathItems";
 
-const HomeScreen = () => {
+const HomeScreen = ({ navigation }) => {
   return (
     <View style={styles.container}>
       {/* <Text style={styles.title}>Choose your path</Text> */}
-      <PathItems children={"go to path 1"} />
+      <PathItems
+        children={"go to path 1"}
+        onPress={() => {
+          navigation.navigate("MapViewScreen");
+        }}
+      />
       <PathItems children={"go to path 2"} />
       <PathItems children={"go to path 3"} />
       <PathItems children={"go to path 4"} />

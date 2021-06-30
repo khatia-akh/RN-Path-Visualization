@@ -1,10 +1,10 @@
 import * as React from "react";
-import { StyleSheet, View, Text, Image } from "react-native";
+import { StyleSheet, View, Text, Image, TouchableOpacity } from "react-native";
 import RightArrow from "../../assets/icons/RightArrow.png";
 
-const PathItems = ({ children }) => {
+const PathItems = ({ children, onPress }) => {
   return (
-    <View style={styles.container}>
+    <TouchableOpacity style={styles.container} onPress={onPress}>
       <Text style={styles.title}>{children}</Text>
       <View style={styles.iconCont}>
         {/* <Image
@@ -17,7 +17,7 @@ const PathItems = ({ children }) => {
           resizeMode="contain"
         />
       </View>
-    </View>
+    </TouchableOpacity>
   );
 };
 
