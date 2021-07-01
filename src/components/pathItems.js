@@ -42,8 +42,8 @@ const styles = StyleSheet.create({
     fontSize: 20,
   },
   iconCont: {
-    width: 60,
-    height: 55,
+    width: 45,
+    height: 40,
     // backgroundColor: "#c7cedf",
   },
 });

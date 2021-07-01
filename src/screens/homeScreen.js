@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { useState, useEffect } from "react";
 import { StyleSheet, View, Text } from "react-native";
 
 import PathItems from "../components/pathItems";
@@ -13,10 +13,30 @@ const HomeScreen = ({ navigation }) => {
           navigation.navigate("MapViewScreen");
         }}
       />
-      <PathItems children={"go to path 2"} />
-      <PathItems children={"go to path 3"} />
-      <PathItems children={"go to path 4"} />
-      <PathItems children={"go to path 5"} />
+      <PathItems
+        children={"go to path 2"}
+        onPress={() => {
+          navigation.navigate("MapViewScreen");
+        }}
+      />
+      <PathItems
+        children={"go to path 3"}
+        onPress={() => {
+          navigation.navigate("MapViewScreen");
+        }}
+      />
+      <PathItems
+        children={"go to path 4"}
+        onPress={() => {
+          navigation.navigate("MapViewScreen");
+        }}
+      />
+      <PathItems
+        children={"go to path 5"}
+        onPress={() => {
+          navigation.navigate("MapViewScreen");
+        }}
+      />
     </View>
   );
 };
