@@ -7,10 +7,6 @@ const PathItems = ({ children, onPress }) => {
     <TouchableOpacity style={styles.container} onPress={onPress}>
       <Text style={styles.title}>{children}</Text>
       <View style={styles.iconCont}>
-        {/* <Image
-          style={{ flexDirection: 1, width: "100%", height: "100%" }}
-          src={{ uri: RightArrow }}
-        /> */}
         <Image
           style={{ width: "100%", height: "100%" }}
           source={RightArrow}
@@ -26,7 +22,6 @@ const styles = StyleSheet.create({
     height: 60,
     width: "100%",
     backgroundColor: "#002a29",
-    // alignItems: "center",
     marginVertical: 5,
     borderTopRightRadius: 25,
     borderTopLeftRadius: 25,
@@ -44,7 +39,6 @@ const styles = StyleSheet.create({
   iconCont: {
     width: 45,
     height: 40,
-    // backgroundColor: "#c7cedf",
   },
 });
 
